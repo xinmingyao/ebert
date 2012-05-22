@@ -19,7 +19,7 @@ all()->
 
 
 get(Config)->
-    {ok,Pid}=ebert_c:start_link("192.168.208.81",9999),
+    {ok,Pid}=ebert_c:start_link("192.168.208.85",9999),
     {ok,3}= ebert_c:call(Pid,nat,add,[1,2]).
 
     
